@@ -17,11 +17,7 @@ export default function BlindFullScreenGame({
       timestamp: new Date().toISOString(),
     };
 
-    await fetch("/api/vote", {
-      method: "POST",
-      body: JSON.stringify(payload),
-      headers: { "Content-Type": "application/json" },
-    });
+      console.log("Nuevo voto:", JSON.stringify(payload));
 
     // Después del voto, pasamos al siguiente test
     setTimeout(() => {
