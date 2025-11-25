@@ -5,7 +5,7 @@ const tests = [
   {
     id: "test-donas",
     images: [
-      "/images/donas_original.webp",
+      "/images/donas_original.png",
       "/images/donas_gemini.png",
       "/images/donas_gpt.png"
     ]
@@ -13,7 +13,7 @@ const tests = [
   {
     id: "test-shark",
     images: [
-      "/images/shark_original.webp",
+      "/images/shark_original.jpg",
       "/images/shark_gemini.png",
       "/images/shark_gpt.png"
     ]
@@ -24,6 +24,20 @@ const tests = [
       "/images/tuntun_original.png",
       "/images/tuntun_gemini.png",
       "/images/tuntun_gpt.png"
+    ]
+  },{
+    id: "test-mariposa",
+    images: [
+      "/images/mariposa_original.png",
+      "/images/mariposa_gemini.png",
+      "/images/mariposa_gpt.png"
+    ]
+  },{
+    id: "test-roblox",
+    images: [
+      "/images/roblox_original.png",
+      "/images/roblox_gemini.png",
+      "/images/roblox_gpt.png"
     ]
   }
 ];

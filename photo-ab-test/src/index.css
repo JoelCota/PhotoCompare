@@ -46,22 +46,42 @@ html, body, #root {
   flex-direction: row;
   height: 100vh;
 }
-
 /* Móvil: cambiar a columna y 3 imágenes visibles en toda la pantalla */
 @media (max-width: 768px) {
+
   .row.images-wrapper {
+    display: flex !important;       /* <--- NECESARIO */
     flex-direction: column !important;
+    height: 100vh;
   }
+
+  .image-cell {
+    height: 33vh !important;        /* 3 imágenes = 33% cada una */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /* Cada celda debe tener una altura fija (o adaptable) */
+.image-cell {
+  height: 33vh; /* 3 imágenes visibles = 33% del alto */
+  overflow: hidden;
+  position: relative;
+}
+
+/* La imagen debe llenar la celda aunque se recorte */
 .full-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;     /* << LA CLAVE */
+  object-position: center;
+  display: block;
 }
-
-
-
-  .image-cell {
-    height: 33vh !important; /* 3 imágenes = 33% cada una */
-  }
 }
 

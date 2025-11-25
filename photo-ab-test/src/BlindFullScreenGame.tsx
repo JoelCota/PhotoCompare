@@ -29,22 +29,21 @@ export default function BlindFullScreenGame({
     }, 500);
   }
 
-  return (
-    <div className="container-fluid h-100">
-      <div className="row images-wrapper">
-        {/* Desktop y tablets → columnas normales */}
-        {images.map((img, i) => (
-          <div
-            key={i}
-            className="col-12 col-md-4 p-0 position-relative image-cell"
-            onClick={() => vote(i)}
-          >
-            <img src={img} className="full-image" />
-            <div className="select-label">Elegir</div>
-          </div>
-        ))}
-      </div>
+return (
+  <div className="container-fluid h-100">
+    <div className="row images-wrapper">
+      {images.map((img, i) => (
+        <div
+          key={i}
+          className="col-12 col-md-4 p-0 position-relative image-cell"
+          onClick={() => vote(i)}
+        >
+          <img src={img} className="full-image" />
+          <div className="select-label">Elegir</div>
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
 
 }
