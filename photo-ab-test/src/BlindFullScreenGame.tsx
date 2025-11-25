@@ -17,7 +17,7 @@ export default function BlindFullScreenGame({
       timestamp: new Date().toISOString(),
     };
 
-      console.log("Nuevo voto:", JSON.stringify(payload));
+      console.info("Nuevo voto:", JSON.stringify(payload));
 
     // Después del voto, pasamos al siguiente test
     setTimeout(() => {
