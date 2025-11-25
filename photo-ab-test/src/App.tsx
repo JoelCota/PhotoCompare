@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BlindFullScreenGame from "./BlindFullScreenGame.tsx";  // 👈 corregido
 
 const tests = [

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface BlindFullScreenGameProps {
   testId: string;
   images: string[];
