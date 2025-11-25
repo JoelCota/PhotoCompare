@@ -44,20 +44,6 @@ export default function BlindFullScreenGame({
           </div>
         ))}
       </div>
-
-      {/* Móvil → fila horizontal con scroll */}
-      <div className="mobile-row d-flex d-md-none mt-3">
-        {images.map((img, i) => (
-          <div
-            key={i}
-            className="image-cell"
-            onClick={() => vote(i)}
-          >
-            <img src={img} className="img-fluid" />
-            <div className="select-label text-center">Elegir</div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 
