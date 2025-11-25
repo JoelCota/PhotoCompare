@@ -1,0 +1,67 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.image-cell {
+  cursor: pointer;
+  overflow: hidden;
+  height: 100vh; /* cada card ocupa toda la pantalla */
+  position: relative;
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* <<< RECORTA LA IMAGEN PARA LLENAR LA CARD */
+  transition: transform 0.25s ease;
+}
+
+.image-cell:hover .full-image {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.select-label {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.5);
+  padding: 10px 25px;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.image-cell:hover .select-label {
+  opacity: 1;
+}
+.row.images-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Móvil: cambiar a columna y 3 imágenes visibles en toda la pantalla */
+@media (max-width: 768px) {
+  .row.images-wrapper {
+    flex-direction: column !important;
+  }
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+  .image-cell {
+    height: 33vh !important; /* 3 imágenes = 33% cada una */
+  }
+}
+
