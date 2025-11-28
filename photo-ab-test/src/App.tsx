@@ -21,9 +21,9 @@ const tests = [
   {
     id: "test-tun-tun-sahur",
     images: [
-      "/images/tuntun_original.png",
-      "/images/tuntun_gemini.png",
-      "/images/tuntun_gpt.png"
+      "/images/sabrina_original.png",
+      "/images/sabrina_gemini.png",
+      "/images/sabrina_gpt.png"
     ]
   },{
     id: "test-mariposa",
