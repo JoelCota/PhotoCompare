@@ -21,7 +21,7 @@ const tests = [
   {
     id: "test-tun-tun-sahur",
     images: [
-      "/images/sabrina_original.png",
+      "/images/sabrina_original.jpg",
       "/images/sabrina_gemini.png",
       "/images/sabrina_gpt.png"
     ]
